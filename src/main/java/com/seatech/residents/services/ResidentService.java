@@ -1,6 +1,6 @@
-package com.seatech.Residents.services;
+package com.seatech.residents.services;
 
-import com.seatech.Residents.model.Resident;
+import com.seatech.residents.model.Resident;
 import org.springframework.http.ResponseEntity;
 import java.util.List;
 

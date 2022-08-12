@@ -1,7 +1,7 @@
-package com.seatech.Residents.services;
+package com.seatech.residents.services;
 
-import com.seatech.Residents.model.Resident;
-import com.seatech.Residents.repositories.ResidentRepositoryInterface;
+import com.seatech.residents.model.Resident;
+import com.seatech.residents.repositories.ResidentRepositoryInterface;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

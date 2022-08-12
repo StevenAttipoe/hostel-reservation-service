@@ -1,4 +1,4 @@
-package com.seatech.Residents.model;
+package com.seatech.residents.model;
 
 import lombok.Data;
 import javax.persistence.*;

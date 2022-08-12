@@ -1,4 +1,4 @@
-package com.seatech.Residents;
+package com.seatech.residents;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

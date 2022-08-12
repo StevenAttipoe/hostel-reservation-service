@@ -1,7 +1,7 @@
-package com.seatech.Residents.controller;
+package com.seatech.residents.controller;
 
-import com.seatech.Residents.model.Resident;
-import com.seatech.Residents.services.ResidentService;
+import com.seatech.residents.model.Resident;
+import com.seatech.residents.services.ResidentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

@@ -1,6 +1,6 @@
-package com.seatech.Residents.repositories;
+package com.seatech.residents.repositories;
 
-import com.seatech.Residents.model.Resident;
+import com.seatech.residents.model.Resident;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
