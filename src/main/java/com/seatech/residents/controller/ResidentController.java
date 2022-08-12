@@ -1,11 +1,10 @@
 package com.seatech.Residents.controller;
 
 import com.seatech.Residents.model.Resident;
-import com.seatech.Residents.services.ResidentServiceInterface;
+import com.seatech.Residents.services.ResidentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:3000/")
@@ -14,35 +13,35 @@ import java.util.List;
 public class ResidentController {
 
     @Autowired
-    private ResidentServiceInterface residentServiceInterface;
+    private final ResidentService residentService;
 
-    public ResidentController(ResidentServiceInterface residentServiceInterface) {
-        this.residentServiceInterface = residentServiceInterface;
+    public ResidentController(ResidentService residentService) {
+        this.residentService = residentService;
     }
 
     @PostMapping("/create")
     public Resident createResident(@RequestBody Resident resident){
-        return residentServiceInterface.createResident(resident);
+        return residentService.createResident(resident);
     }
 
     @GetMapping("/getAll")
     public List<Resident> getResidents(){
-        return residentServiceInterface.getAllResidents();
+        return residentService.getAllResidents();
     }
 
     @GetMapping("/get/{id}")
     public ResponseEntity getResidentById(@PathVariable Long id){
-        return residentServiceInterface.getResidentById(id);
+        return residentService.getResidentById(id);
     }
 
     @PostMapping("/update/{id}")
     public ResponseEntity updateResident(@PathVariable Long id,@RequestBody Resident resident){
-        return residentServiceInterface.updateResidentById(id, resident);
+        return residentService.updateResidentById(id, resident);
     }
 
     @DeleteMapping("/delete/{id}")
     public ResponseEntity deleteResident(@PathVariable Long id){
-       return residentServiceInterface.deleteResident(id);
+       return residentService.deleteResident(id);
     }
 
 }

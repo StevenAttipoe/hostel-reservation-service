@@ -9,11 +9,11 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class ResidentService implements ResidentServiceInterface{
+public class ResidentServiceImpl implements ResidentService {
 
     private ResidentRepositoryInterface residentRepositoryInterface;
 
-    public ResidentService(ResidentRepositoryInterface residentRepositoryInterface) {
+    public ResidentServiceImpl(ResidentRepositoryInterface residentRepositoryInterface) {
         this.residentRepositoryInterface = residentRepositoryInterface;
     }
 

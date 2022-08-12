@@ -4,7 +4,7 @@ import com.seatech.Residents.model.Resident;
 import org.springframework.http.ResponseEntity;
 import java.util.List;
 
-public interface ResidentServiceInterface {
+public interface ResidentService {
     Resident createResident(Resident resident);
 
     List<Resident> getAllResidents();
